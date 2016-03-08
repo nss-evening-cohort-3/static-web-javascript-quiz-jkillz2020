@@ -32,7 +32,7 @@ function buildTree() {
 
 function validateInputs() {
   if (((document.getElementById("height").value).length == 0) || ((document.getElementById("char").value).length == 0)) {
-    alert("Please enter both a height and a character!")
+    alert("Please enter both a height and a character!");
     // return false;
   }
 
@@ -54,7 +54,13 @@ function validateInputs() {
 
 
 }
-//buildButton.addEventListener("keypress()", buildTree);
+
+addEventListener("keypress", function(e){
+  if ( e.keyCode === 13){
+    buildTree()
+  }
+});
+
  
 buildButton.addEventListener("click", buildTree);
 
