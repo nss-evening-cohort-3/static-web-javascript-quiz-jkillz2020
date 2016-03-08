@@ -54,7 +54,8 @@ function validateInputs() {
 
 
 }
-//submitButton.addEventListener("click", validateInputs);
+//buildButton.addEventListener("keypress()", buildTree);
+ 
 buildButton.addEventListener("click", buildTree);
 
 
